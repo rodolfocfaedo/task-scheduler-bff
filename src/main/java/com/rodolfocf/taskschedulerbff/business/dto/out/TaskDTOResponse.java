@@ -3,14 +3,12 @@ package com.rodolfocf.taskschedulerbff.business.dto.out;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import com.rodolfocf.taskschedulerbff.infrastructure.enums.NotificationStatusEnum;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 
 import java.time.LocalDateTime;
 
+@ToString
 @Setter
 @Getter
 @AllArgsConstructor

@@ -30,7 +30,8 @@ public interface TaskClient {
 
 
     @DeleteMapping
-    void deleteTaskById(@RequestParam("id") String id, @RequestHeader("Authorization") String token);
+    void deleteTaskById(@RequestParam("id") String id, 
+                        @RequestHeader("Authorization") String token);
 
 
     @PatchMapping

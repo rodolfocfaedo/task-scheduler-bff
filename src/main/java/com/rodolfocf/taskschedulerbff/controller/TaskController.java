@@ -63,6 +63,7 @@ public class TaskController {
     @ApiResponse(responseCode = "500", description = "Internal Server Error")
     public ResponseEntity<String> deleteTaskById(@RequestParam("id") String id,
                                                  @RequestHeader(name = "Authorization", required = false) String token) {
+        taskService.deleteTaskById(id, token);
         return ResponseEntity.ok().body("Task deleted!");
     }
 
